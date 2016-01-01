@@ -9,6 +9,7 @@ Place to keep track of known bugs and FAQs for Magento 2 Developer's Guide book 
     * On page 332 the template with id `foggyline_helpdesk_email_template_customer` needs changing value from `area="frontend"` to `area="adminhtml"`. On page
     * On page 333 the `view/frontend/email/store_owner_to_customer.html` file needs to be moved into `view/adminhtml/email/store_owner_to_customer.html`
 * **Page 345** - Be sure to use the code from GitHub as full example. The book example is missing getStatusesOptionArray method.
+* **Page 372** - Class definition not right in the book, needs to be changed from `class Ticket` to `abstract class Ticket`. This has been updated in the GitHub [here](https://github.com/ajzele/B05032-Foggyline_Helpdesk/blob/master/Controller/Ticket.php).
 * **XML syntax** - keep in mind that text values wrapped in XML elements need to be in single line, not broken into multiple lines, or else they wont work. If copy-pasting these into the code, be sure to adjust them into single line. See below:
 
     WRONG:
