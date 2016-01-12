@@ -2,6 +2,7 @@
 Place to keep track of known bugs and FAQs for Magento 2 Developer's Guide book written by Branko Ajzele, under ISBN-13 "9781785886584".
 
 
+* **Page 5** - There is a line that says `The var/magento/language-* directories`, which is wrong. It should say `The vendor/magento/language-* directories`
 * **Page 91** - There is a line that says `'Foggyline\Office\Model\ResourceModel\Employee\Collection's`, which is wrong. The `s` char at the end of the line needs to be removed. Assuming this bug came to existence during copy-paste of the code from IDE to MS Word, where some of MS Word auto-correction features might have done this.
 * **Page 125** - Seems like there was an error in the github code (not the book), whereas the code did not show the messages appear. The fix for that code was committed in the approapriate module [here](https://github.com/ajzele/B05032-Foggyline_Office/commit/15ecf7e24da4855fcd9914d7be26325d176f9208). The B05032-Foggyline_Office module was tested again and it seems to be working OK. Be sure to clear Magento cache, cookies and browser storage during testing. Also, keep in mind that messages are written using JavaScript once the page is fully loaded - sometimes it takes up to few seconds for messages to show.
 * **Page 149** - There is a line that says `{{widget type="Foggyline\\Office\\Block\\Widget\\Example" var1="1" var2="5"}}`. Please use a single slash `\` instead of double slashes `\\`.
